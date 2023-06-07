@@ -1,0 +1,118 @@
+* {
+  margin: 0 auto;
+}
+
+.navigation__styling {
+  background-color: #33292a;
+  height: 5rem;
+}
+
+.fa-bars {
+  display: block;
+  float: right;
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.unorderedList__styling {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .unorderedList__styling {
+    display: none;
+  }
+}
+
+.div__hero__section__img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.div__hero__text {
+  margin: 0 auto;
+  color: white;
+  width: 20%;
+  text-align: right;
+  position: relative;
+  bottom: -80%;
+  right: -35%;
+}
+
+.div__about__section {
+}
+
+.div__what__we__do__section {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #33292a;
+  color: white;
+  font-weight: bold;
+}
+
+.what__we__do__icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.fas {
+  color: white;
+  font-size: 5rem;
+}
+
+.div__gallery__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div__contact__section {
+  color: white;
+  background-color: #644b4f;
+}
+
+.button__contact__us {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.div__reviews__section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviews__img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.div__footer {
+  text-align: center;
+  color: white;
+  background-color: #333333;
+}
+
+.anchor__styling {
+  color: #efa69d;
+  transition: color 0.3s;
+}
+
+.anchor__styling:hover {
+  color: #e9877b;
+}
