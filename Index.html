@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESPONSIVNÍ WEBOVÁ STRÁNKA</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/27b9d7ad5a.js"
       crossorigin="anonymous"
@@ -17,7 +21,7 @@
   <body>
     <navigation>
       <div class="navigation__styling">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars fa-2x"></i>
         <ul class="unorderedList__styling">
           <li>About Us</li>
           <li>What We Do</li>
@@ -30,14 +34,14 @@
     <hero>
       <div class="div__hero__section__img">
         <div class="div__hero__text">
-          <h1>Your Travel Assistant</h1>
+          <h1 class="heading1_styling">Your Travel Assistant</h1>
         </div>
       </div>
     </hero>
     <about>
       <div class="div__about__section">
-        <h1>About Us</h1>
-        <p>
+        <h1 class="heading1__about_us">About Us</h1>
+        <p class="paragraph__about_us">
           Leigh McAdam is a Calgary-based writer, photographer and social media
           enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is
           frequently cited as one of the top travel and outdoor adventure blogs
@@ -49,11 +53,14 @@
           Spots in Alberta (spring 2018). A true adventurer, Leigh will try
           anything once, except perhaps bungee jumping.
         </p>
-        <img src="assets/anneliese-phillips-uv4-vl3liKM-unsplash.jpg" />
+        <img
+          class="img-- nature0"
+          src="assets/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
+        />
       </div>
       <div class="div__what__we__do__section">
-        <h1>What We Do</h1>
-        <p>
+        <h1 class="heading1__what_we_do">What We Do</h1>
+        <p class="paragraph__what_we_do">
           Opportunities for challenging hikes and pleasant strolls are scattered
           all over this planet; you just need to know where to find them. We do.
           Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out
@@ -65,14 +72,21 @@
           lower-impact walks and iconic treks you’ll love, too.
         </p>
         <div class="what__we__do__icons">
-          <i class="fas fa-mountain"></i>
-          <p>Hiking</p>
-          <i class="fas fa-biking"></i>
-          <p>Cycling</p>
-          <i class="fas fa-water"></i>
-          <p>Surfing</p>
-          <i class="fas fa-car"></i>
-          <p>Car trips</p>
+          <i class="fas fa-mountain"
+            ><p class="paragraph_icon_hiking">Hiking</p></i
+          >
+
+          <i class="fas fa-biking"
+            ><p class="paragraph_icon_cycling">Cycling</p></i
+          >
+
+          <i class="fas fa-water"
+            ><p class="paragraph_icon_surfing">Surfing</p></i
+          >
+
+          <i class="fas fa-car"
+            ><p class="paragraph_icon_car_trips">Car trips</p></i
+          >
         </div>
       </div>
     </about>
@@ -94,7 +108,9 @@
           class="img-- nature4"
           src="/assets/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg"
         />
-        <h2 class="heading2-- our__trips">Our Trips</h2>
+        <div class="div_heading2_our_trips">
+          <h2 class="heading2--our__trips">Our Trips</h2>
+        </div>
         <img
           class="img-- nature5"
           src="/assets/patrick-szylar-45bM3XGqnDE-unsplash.jpg"
@@ -115,31 +131,31 @@
     </gallery>
     <contact>
       <div class="div__contact__section">
-        <h2>Where do you want to go?</h2>
-        <p>
+        <h2 class="heading2--where__go">Where do you want to go?</h2>
+        <p class="paragraph__where__go">
           You’ll find 21 detailed adventure guides, over a hundred practical
           travel tips, book reviews on anything outdoors related, packing lists
           on a range of outdoor activities including kayaking, backpacking and
           camping as well as honest hotel and B&B reviews.
         </p>
-        <p>Contact us and we will help you!</p>
+        <p class="paragraph__contact_us">Contact us and we will help you!</p>
         <button class="button__contact__us">CONTACT US</button>
       </div>
     </contact>
     <reviews>
       <div class="div__reviews__section">
-        <h2>Reviews</h2>
-        <p>
+        <h2 class="heading2--reviews">Reviews</h2>
+        <p class="paragraph__reviews1">
           Our amazing clients are the reason we exist, and their reactions to
           our customized travel experiences and personalized service keep us
           smiling all day long. Here is just a sampling of what they’ve said:
         </p>
         <div class="review-- 1">
           <img
-            class="reviews__img"
+            class="img-- reviews1"
             src="/assets/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
           />
-          <p>
+          <p class="paragraph__reviews2">
             She has booked two major European trips for us in the past year and
             every aspect has met, and in most cases exceeded, our expectations.
             Best prices, best hotels, best itineraries, and best cruises, she
@@ -151,7 +167,7 @@
         </div>
         <div class="review-- 2">
           <img
-            class="reviews__img"
+            class="img-- reviews2"
             src="/assets/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg"
           />
           <p>
@@ -168,10 +184,26 @@
     </reviews>
     <div class="imgs__footer">
       <div class="footer__gallery">
-        <img src="assets/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg" alt="" />
-        <img src="assets/omer-salom-LoijtQXXNhs-unsplash.jpg" alt="" />
-        <img src="assets/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg" alt="" />
-        <img src="assets/daniel-tseng-73lmMKhi2U8-unsplash.jpg" alt="" />
+        <img
+          class="img-- footer_img1"
+          src="assets/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg"
+          alt=""
+        />
+        <img
+          class="img-- footer_img2"
+          src="assets/omer-salom-LoijtQXXNhs-unsplash.jpg"
+          alt=""
+        />
+        <img
+          class="img-- footer_img3"
+          src="assets/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
+          alt=""
+        />
+        <img
+          class="img-- footer_img4"
+          src="assets/daniel-tseng-73lmMKhi2U8-unsplash.jpg"
+          alt=""
+        />
       </div>
     </div>
     <footer>
