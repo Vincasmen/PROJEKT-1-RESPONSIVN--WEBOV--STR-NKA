@@ -13,6 +13,11 @@
   flex-direction: column;
   align-items: flex-end;
 }
+@media screen and (min-width: 768px) {
+  .div--burger_menu {
+    display: none;
+  }
+}
 
 .bar--1 {
   background-color: white;
@@ -37,13 +42,19 @@
 }
 
 .unorderedList__styling {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
   color: white;
   list-style: none;
-  display: flex;
+  padding: 0rem;
+  margin: 0 auto;
+  width: 80%;
   gap: 0.5rem;
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .unorderedList__styling {
     display: none;
   }
@@ -65,13 +76,15 @@
   margin: 0 auto;
   color: white;
   width: 3rem;
-  position: relative;
-  right: -20%;
-  bottom: -65%;
+  /* position: relative; */
+  right: 35%;
+  bottom: 10%;
 }
 
 .heading1_styling {
   text-align: right;
+  font-size: clamp(2rem, 5vw, 10rem);
+  width: fit-content;
 }
 
 .div__about__section {
