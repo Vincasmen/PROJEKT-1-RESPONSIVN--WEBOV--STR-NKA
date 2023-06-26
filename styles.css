@@ -226,6 +226,7 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 3rem 1rem;
+  width: 90%;
 }
 
 .div_heading2_our_trips {
@@ -238,22 +239,37 @@
   margin: 2rem 0rem;
 }
 
-.img-- {
-  width: 80vw;
+.nature {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 1024px) {
   .div__gallery__section {
-    display: flex;
+    align-content: space-around;
+    /* align-items: center; */
     flex-wrap: wrap;
-    width: 50%;
-    height: 50%;
-    gap: 10px;
+    width: 30%;
+    height: 35rem;
+    flex-basis: auto;
   }
 
-  .img-- img {
+  .div_heading2_our_trips {
+    width: 5rem;
+    height: 11rem;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  .div__gallery__item {
     flex-basis: calc(100% / 3 - 7px);
-    background-color: #e9877b;
+    height: calc(100% / 3 - 7px);
+  }
+
+  .nature {
+    object-fit: cover;
+    /* max-width: 70%; */
+    /* background-size: cover; */
   }
 }
 
