@@ -316,8 +316,7 @@
   .inner__div__contact__us {
     display: flex;
     flex-direction: row;
-
-    width: 35rem;
+    width: 50rem;
   }
   .div__heading__contact__us {
     flex-direction: row;
