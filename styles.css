@@ -236,7 +236,7 @@
 }
 
 .div_heading2_our_trips {
-  width: 10rem;
+  width: 90%;
   background-color: #f2f2f2;
   text-align: center;
 }
@@ -259,10 +259,10 @@
   }
 
   .div_heading2_our_trips {
+    display: flex;
     flex-grow: 1;
     width: 30%;
-    margin: 0 auto;
-    text-align: center;
+    align-items: center;
   }
 
   .div__gallery__item {
@@ -270,6 +270,10 @@
     flex-basis: auto;
     flex-grow: 1;
     padding: 0;
+  }
+
+  .heading2--our__trips {
+    margin: 0 auto;
   }
 
   .nature {
@@ -317,15 +321,15 @@
     display: flex;
     flex-direction: row;
     width: 50rem;
+    gap: 1rem;
   }
   .div__heading__contact__us {
     flex-direction: row;
     flex-grow: 1;
-    /* width: 50rem; */
   }
 
   .heading2--where__go {
-    width: 15rem;
+    width: 13rem;
     margin: 0rem 3rem 0rem 0rem;
   }
 
@@ -334,14 +338,15 @@
   }
 
   .p__butt__div {
-    display: flex;
     flex-direction: column;
-    justify-content: left;
   }
 
   .div__par__butt {
-    display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+  .button__contact__us {
+    margin: 0 auto;
   }
 }
 
@@ -354,6 +359,7 @@
 }
 
 .heading2--reviews {
+  font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 2rem;
 }
 
@@ -374,6 +380,25 @@
 .paragraph__user_name2 {
   font-weight: bold;
   margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .paragraph__reviews1 {
+    width: 25rem;
+  }
+  .reviews__div {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    flex-wrap: wrap;
+  }
+
+  .paragraph__reviews2 {
+    width: 20rem;
+  }
+  .paragraph__reviews3 {
+    width: 20rem;
+  }
 }
 
 .img__div_review1 {
@@ -421,6 +446,40 @@
 }
 .footer_img4 {
   width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 auto;
+  }
+  .footer_img1 {
+    flex-basis: 40%;
+    flex-grow: 1;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .footer_img2 {
+    flex-basis: 40%;
+    flex-grow: 1;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .footer_img3 {
+    flex-basis: 40%;
+    flex-grow: 1;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .footer_img4 {
+    flex-basis: 40%;
+    flex-grow: 1;
+    width: 30%;
+    margin: 0 auto;
+  }
 }
 
 .div__footer {
