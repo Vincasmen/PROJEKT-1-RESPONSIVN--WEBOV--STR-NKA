@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .div--burger_menu {
@@ -26,6 +27,7 @@
   border-radius: 20px;
   margin: 5px 0px;
 }
+
 .bar--2 {
   background-color: white;
   width: 45px;
@@ -52,6 +54,13 @@
   width: 80%;
   gap: 0.5rem;
   font-size: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.list {
+  cursor: pointer;
+}
+.list:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
@@ -263,6 +272,7 @@
     flex-grow: 1;
     width: 30%;
     align-items: center;
+    border-radius: 3px;
   }
 
   .div__gallery__item {
