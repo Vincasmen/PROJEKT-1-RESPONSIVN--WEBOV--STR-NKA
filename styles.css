@@ -1,19 +1,31 @@
 * {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 .navigation__styling {
+  display: flex;
+  flex-direction: row-reverse;
   background-color: #33292a;
   padding: 1rem;
 }
 
 .div--burger_menu {
   display: flex;
+  flex-basis: 1rem;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   cursor: pointer;
+  margin: 0;
+  transform: rotate(0turn);
+  transition-duration: 500ms;
 }
+.div--burger_menu:hover {
+  transform: rotate(0.25turn);
+  transition-duration: 500ms;
+}
+
 @media screen and (min-width: 768px) {
   .div--burger_menu {
     display: none;
@@ -22,10 +34,10 @@
 
 .bar--1 {
   background-color: white;
-  width: 45px;
   height: 5px;
   border-radius: 20px;
-  margin: 5px 0px;
+  margin: 4px 0px;
+  width: clamp(1.8rem, 6vw, 8rem);
 }
 
 .bar--2 {
@@ -33,27 +45,31 @@
   width: 45px;
   height: 5px;
   border-radius: 20px;
-  margin: 5px 0px;
+  margin: 4px 0px;
+  width: clamp(1.8rem, 6vw, 8rem);
 }
 .bar--3 {
   background-color: white;
   width: 45px;
   height: 5px;
   border-radius: 20px;
-  margin: 5px 0px;
+  margin: 4px 0px;
+  width: clamp(1.8rem, 6vw, 8rem);
 }
 
 .unorderedList__styling {
   display: flex;
-  justify-content: center;
-  flex-grow: 1;
+  align-items: center;
+  flex-wrap: nowrap;
   color: white;
   list-style: none;
   padding: 0rem;
   margin: 0 auto;
   width: 80%;
   gap: 0.5rem;
-  font-size: clamp(0.5rem, 2vw, 1.5rem);
+  font-size: clamp(0.6rem, 2.5vw, 1.5rem);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .list {
@@ -64,7 +80,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .unorderedList__styling {
+  .hidden {
     display: none;
   }
 }
@@ -73,7 +89,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,6 +113,7 @@
 }
 
 .div__about__section {
+  margin-top: 2rem;
   padding: 3rem 1.5rem;
 }
 
